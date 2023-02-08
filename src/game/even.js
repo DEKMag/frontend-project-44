@@ -24,7 +24,7 @@ const userPlayGames = () => {
     const userCorrect = [numGetRondom, userCorrectAnswer];
 
     if (userCorrectQuestion[1] !== userCorrect[1]) {
-      console.log(`You gave the wrong answer.\n Let's try again, ${userName}!`);
+      console.log(`${userCorrectQuestion[1]} is wrong answer ;(. Correct answer was ${userCorrect[1]}.\n Let's try again, ${userName}!`);
       return;
     }
     console.log('Correct!');

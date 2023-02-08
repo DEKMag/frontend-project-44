@@ -8,4 +8,7 @@
 [https://asciinema.org/a/yVKwcgUiRWo4ZggA3yM1tQQNC]
 
 ### Start "brain-calc.js"
+[https://asciinema.org/a/9P29unxmclyKTadJgmvMNC9z8]
+
+### Start "brain-gcd"
 []

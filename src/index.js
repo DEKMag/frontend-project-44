@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { numberRandom, operationRandom } from '../random.js';
+import { numberRandom } from '../src/random.js';
 
 const userQuestion = () => {
   const userName = readlineSync.question('May I have your name? ');
@@ -12,24 +12,16 @@ const userTestNumber = () => {
   return numberTest;
 };
 
-const mathematicsExamination = () => {
-  const numberOptionOne = numberRandom();
-  const numberOptionTwo = numberRandom();
-  const operationOption = operationRandom();
-
-  let mathematicsResult;
-
-  if (operationOption === '+') {
-    const testOne = numberOptionOne + numberOptionTwo;
-    mathematicsResult = testOne;
-  } else if (operationOption === '-') {
-    const testTwo = numberOptionOne - numberOptionTwo;
-    mathematicsResult = testTwo;
-  } else if (operationOption === '*') {
-    const testThree = numberOptionOne * numberOptionTwo;
-    mathematicsResult = testThree;
+const mathematicsExamination = (numberOne, numberTwo, operationOption) => {
+  switch (operationOption) {
+    case '+':
+      return numberOne + numberTwo;
+    case '-':
+      return numberOne - numberTwo;
+    case '*':
+      return numberOne * numberTwo;
+    default: throw new Error('You made a mistake!');
   }
-  return mathematicsResult;
 };
 
 export { userQuestion, userTestNumber, mathematicsExamination };
