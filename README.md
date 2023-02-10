@@ -11,4 +11,7 @@
 [https://asciinema.org/a/9P29unxmclyKTadJgmvMNC9z8]
 
 ### Start "brain-gcd"
+[https://asciinema.org/a/7Ko88d0MVbMfGWCnNmpHuoJoU]
+
+### Start "brain-progression"
 []

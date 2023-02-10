@@ -24,4 +24,17 @@ const mathematicsExamination = (numberOne, numberTwo, operationOption) => {
   }
 };
 
-export { userQuestion, userTestNumber, mathematicsExamination };
+const largestDivisor = (one, two) => {
+  let number0ne = Math.abs(one);
+  let numberTwo = Math.abs(two);
+  while (numberTwo) {
+    let result = numberTwo;
+    numberTwo = number0ne % numberTwo;
+    number0ne = result;
+  }
+  return number0ne;
+};
+
+export {
+  userQuestion, userTestNumber, mathematicsExamination, largestDivisor
+};
