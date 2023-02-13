@@ -1,6 +1,19 @@
 import readlineSync from 'readline-sync';
-import numberTestPrime from '../index.js';
 import numberRandom from '../random.js';
+
+const numberTestPrime = (number) => {
+  if (number === 1) {
+    return false;
+  } if (number === 2) {
+    return true;
+  }
+  for (let x = 2; x < number; x += 1) {
+    if (number % x === 0) {
+      return false;
+    }
+  }
+  return true;
+};
 
 const numberPrime = () => {
   console.log('Welcome to the Brain Games!');

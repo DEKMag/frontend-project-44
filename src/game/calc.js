@@ -1,10 +1,21 @@
 import readlineSync from 'readline-sync';
-import mathematicsExamination from '../index.js';
 import numberRandom from '../random.js';
 
 const operationRandom = () => {
   const arrayOperation = ['+', '*', '-'];
   return arrayOperation[Math.floor(Math.random() * arrayOperation.length)];
+};
+
+const mathematicsExamination = (numberOne, numberTwo, operationOption) => {
+  switch (operationOption) {
+    case '+':
+      return numberOne + numberTwo;
+    case '-':
+      return numberOne - numberTwo;
+    case '*':
+      return numberOne * numberTwo;
+    default: throw new Error('You made a mistake!');
+  }
 };
 
 const calculator = () => {
