@@ -17,8 +17,7 @@ const calculator = () => {
     const operationOption = operationRandom();
 
     const userNumberTest = String(mathematicsExamination(numberOne, numberTwo, operationOption));
-    const operationProcess = `${numberOne} ${operationOption} ${numberTwo}`;
-    console.log(`Question: ${operationProcess}`);
+    console.log(`Question: ${numberOne} ${operationOption} ${numberTwo}`);
     const userQuestionNumber = readlineSync.question('Your answer: ');
     if (userQuestionNumber !== userNumberTest) {
       console.log(`${userQuestionNumber} is wrong answer ;(. Correct answer was ${userNumberTest}\nLet's try again, ${userName}!`);
