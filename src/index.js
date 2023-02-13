@@ -1,18 +1,18 @@
 import readlineSync from 'readline-sync';
 import numberRandom from '../src/random.js';
 
-const userQuestion = () => {
+export const userQuestion = () => {
   const userName = readlineSync.question('May I have your name? ');
   return userName;
 };
 
-const userTestNumber = () => {
+export const userTestNumber = () => {
   const numGetRondom = numberRandom();
   const numberTest = numGetRondom % 2 === 0;
   return numberTest;
 };
 
-const numberTestPrime = (number) => {
+export const numberTestPrime = (number) => {
   if (number === 1) {
     return false;
   } if (number === 2) {
@@ -26,7 +26,7 @@ const numberTestPrime = (number) => {
   return true;
 };
 
-const mathematicsExamination = (numberOne, numberTwo, operationOption) => {
+export const mathematicsExamination = (numberOne, numberTwo, operationOption) => {
   switch (operationOption) {
     case '+':
       return numberOne + numberTwo;
@@ -38,7 +38,7 @@ const mathematicsExamination = (numberOne, numberTwo, operationOption) => {
   }
 };
 
-const largestDivisor = (one, two) => {
+export const largestDivisor = (one, two) => {
   let number0ne = Math.abs(one);
   let numberTwo = Math.abs(two);
   while (numberTwo) {
@@ -49,6 +49,6 @@ const largestDivisor = (one, two) => {
   return number0ne;
 };
 
-export default {
-  userQuestion, userTestNumber, mathematicsExamination, largestDivisor, numberTestPrime
-};
+// export default {
+//   userQuestion, userTestNumber, mathematicsExamination, largestDivisor, numberTestPrime
+// };
