@@ -49,6 +49,6 @@ const largestDivisor = (one, two) => {
   return number0ne;
 };
 
-export {
+export default {
   userQuestion, userTestNumber, mathematicsExamination, largestDivisor, numberTestPrime
 };
