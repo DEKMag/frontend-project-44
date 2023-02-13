@@ -17,7 +17,7 @@ const userPlayGames = () => {
 
     console.log(`Question: ${numGetRondom}`);
     const userQuestion = readlineSync.question('Your answer: ');
-    let userCorrectQuestion = [numGetRondom, userQuestion];
+    const userCorrectQuestion = [numGetRondom, userQuestion];
 
     const userCorrectAnswer = numberTest ? 'yes' : 'no';
     const userCorrect = [numGetRondom, userCorrectAnswer];

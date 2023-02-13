@@ -19,7 +19,7 @@ const progressionGames = () => {
 
     const progression = (number, stepNumber, quantityNumber) => {
       const len = quantityNumber;
-      let arr = [];
+      const arr = [];
 
       arr[0] = number;
 

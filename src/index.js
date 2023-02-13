@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { numberRandom } from '../src/random.js';
+import { numberRandom } from '../random.js';
 
 const userQuestion = () => {
   const userName = readlineSync.question('May I have your name? ');
@@ -42,7 +42,7 @@ const largestDivisor = (one, two) => {
   let number0ne = Math.abs(one);
   let numberTwo = Math.abs(two);
   while (numberTwo) {
-    let result = numberTwo;
+    const result = numberTwo;
     numberTwo = number0ne % numberTwo;
     number0ne = result;
   }
@@ -50,6 +50,5 @@ const largestDivisor = (one, two) => {
 };
 
 export {
-  userQuestion, userTestNumber, mathematicsExamination, largestDivisor,
-  numberTestPrime
+  userQuestion, userTestNumber, mathematicsExamination, largestDivisor, numberTestPrime,
 };
