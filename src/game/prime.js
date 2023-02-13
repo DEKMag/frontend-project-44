@@ -21,7 +21,7 @@ const numberPrime = () => {
     console.log(`Question: ${numberOne}`);
     const userQuestionNumber = readlineSync.question('Your answer: ');
     if (userQuestionNumber !== userCorrectAnswer) {
-      console.log(`${userQuestionNumber} is wrong answer ;(. Correct answer was ${userCorrectAnswer}\nLet's try again, ${userName}`);
+      console.log(`${userQuestionNumber} is wrong answer ;(. Correct answer was ${userCorrectAnswer}\nLet's try again, ${userName}!`);
       return;
     }
     console.log('Correct!');

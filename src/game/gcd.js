@@ -20,7 +20,7 @@ const largestDivisorGame = () => {
     console.log(`Question: ${operationProcess}`);
     const userQuestionNumber = readlineSync.question('Your answer: ');
     if (userQuestionNumber !== userNumberTest) {
-      console.log(`${userQuestionNumber} is wrong answer ;(. Correct answer was ${userNumberTest}\nLet's try again, ${userName}`);
+      console.log(`${userQuestionNumber} is wrong answer ;(. Correct answer was ${userNumberTest}\nLet's try again, ${userName}!`);
       return;
     }
     console.log('Correct!');

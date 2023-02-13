@@ -42,7 +42,7 @@ const progressionGames = () => {
     console.log(`Question: ${resultStr}`);
     const userQuestionNumber = readlineSync.question('Your answer: ');
     if (userQuestionNumber !== testNumberResultStr) {
-      console.log(`${userQuestionNumber} is wrong answer ;(. Correct answer was ${testNumberResultStr}\nLet's try again, ${userName}`);
+      console.log(`${userQuestionNumber} is wrong answer ;(. Correct answer was ${testNumberResultStr}\nLet's try again, ${userName}!`);
       return;
     }
     console.log('Correct!');
