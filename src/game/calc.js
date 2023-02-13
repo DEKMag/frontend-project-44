@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { userQuestion, mathematicsExamination } from '../index.js';
+import mathematicsExamination from '../index.js';
 import numberRandom from '../random.js';
 
 const operationRandom = () => {
@@ -9,7 +9,7 @@ const operationRandom = () => {
 
 const calculator = () => {
   console.log('Welcome to the Brain Games!');
-  const userName = userQuestion();
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
 
   console.log('What is the result of the expression?');

@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
-import { userQuestion, largestDivisor } from '../index.js';
+import largestDivisor from '../index.js';
 import numberRandom from '../random.js';
 
 const largestDivisorGame = () => {
   console.log('Welcome to the Brain Games!');
-  const userName = userQuestion();
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
 
   console.log('Find the greatest common divisor of given numbers.');

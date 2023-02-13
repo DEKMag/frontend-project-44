@@ -1,10 +1,4 @@
-import readlineSync from 'readline-sync';
 import numberRandom from '../src/random.js';
-
-export const userQuestion = () => {
-  const userName = readlineSync.question('May I have your name? ');
-  return userName;
-};
 
 export const userTestNumber = () => {
   const numGetRondom = numberRandom();
