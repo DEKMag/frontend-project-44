@@ -12,6 +12,20 @@ const userTestNumber = () => {
   return numberTest;
 };
 
+const numberTestPrime = (number) => {
+  if (number === 1) {
+    return false;
+  } if (number === 2) {
+    return true;
+  }
+  for (let x = 2; x < number; x += 1) {
+    if (number % x === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
 const mathematicsExamination = (numberOne, numberTwo, operationOption) => {
   switch (operationOption) {
     case '+':
@@ -36,5 +50,6 @@ const largestDivisor = (one, two) => {
 };
 
 export {
-  userQuestion, userTestNumber, mathematicsExamination, largestDivisor
+  userQuestion, userTestNumber, mathematicsExamination, largestDivisor,
+  numberTestPrime
 };

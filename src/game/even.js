@@ -14,7 +14,6 @@ const userPlayGames = () => {
   for (let i = 1; i <= numberAttempts; i += 1) {
     const numGetRondom = numberRandom();
     const numberTest = numGetRondom % 2 === 0;
-    // console.log(numberTest);
 
     console.log(`Question: ${numGetRondom}`);
     const userQuestion = readlineSync.question('Your answer: ');

@@ -14,4 +14,7 @@
 [https://asciinema.org/a/7Ko88d0MVbMfGWCnNmpHuoJoU]
 
 ### Start "brain-progression"
-[]
+[https://asciinema.org/a/PnTzZQVEURMRB8cUIkukO8T8n]
+
+### Start "brain-prime"
+[https://asciinema.org/a/g3Y4tUeRvHm6kspUwcG8uoR3b]
