@@ -1,6 +1,11 @@
 import readlineSync from 'readline-sync';
 import { userQuestion, mathematicsExamination } from '../index.js';
-import { numberRandom, operationRandom } from '../random.js';
+import numberRandom from '../random.js';
+
+const operationRandom = () => {
+  const arrayOperation = ['+', '*', '-'];
+  return arrayOperation[Math.floor(Math.random() * arrayOperation.length)];
+};
 
 const calculator = () => {
   console.log('Welcome to the Brain Games!');
