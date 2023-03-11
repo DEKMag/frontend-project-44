@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import numberRandom from '../random.js';
+import isNumberRandom from '../random.js';
 
 const largestDivisor = (one, two) => {
   let number0ne = Math.abs(one);
@@ -22,8 +22,8 @@ const largestDivisorGame = () => {
   const numberAttempts = 3;
 
   for (let i = 1; i <= numberAttempts; i += 1) {
-    const numberOne = numberRandom();
-    const numberTwo = numberRandom();
+    const numberOne = isNumberRandom();
+    const numberTwo = isNumberRandom();
 
     const userNumberTest = String(largestDivisor(numberOne, numberTwo));
     const operationProcess = `${numberOne} ${numberTwo}`;

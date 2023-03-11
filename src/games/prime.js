@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import numberRandom from '../random.js';
+import isNumberRandom from '../random.js';
 
 const numberTestPrime = (number) => {
   if (number === 1) {
@@ -25,7 +25,7 @@ const numberPrime = () => {
   const numberAttempts = 3;
 
   for (let i = 1; i <= numberAttempts; i += 1) {
-    const numberOne = numberRandom();
+    const numberOne = isNumberRandom();
 
     const numberTestResult = numberTestPrime(numberOne);
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import largestDivisorGame from '../src/game/gcd.js';
+import largestDivisorGame from '../src/games/gcd.js';
 
 largestDivisorGame();

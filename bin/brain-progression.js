@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import progressionGames from '../src/game/progression.js';
+import progressionGames from '../src/games/progression.js';
 
 progressionGames();

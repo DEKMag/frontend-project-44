@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import numberRandom from '../random.js';
+import isNumberRandom from '../random.js';
 
 const progressionGames = () => {
   console.log('Welcome to the Brain Games!');
@@ -11,7 +11,7 @@ const progressionGames = () => {
   const numberAttempts = 3;
 
   for (let i = 1; i <= numberAttempts; i += 1) {
-    const numberOne = numberRandom();
+    const numberOne = isNumberRandom();
 
     const step = 2;
     const quantity = 9;
