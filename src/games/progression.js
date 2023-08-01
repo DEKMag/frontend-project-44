@@ -1,7 +1,7 @@
-import isNumberRandom from "../random.js";
-import runEngineGames from "../index.js";
+import isNumberRandom from '../random.js';
+import runEngineGames from '../index.js';
 
-const challenge = "What number is missing in the progression?";
+const challenge = 'What number is missing in the progression?';
 
 const numberOne = isNumberRandom();
 
@@ -27,10 +27,10 @@ const progressionGames = () => {
 
   const correctAnswer = String(testNumber[numberResultOne]);
 
-  const str = "..";
+  const str = '..';
   testNumber[numberResultOne] = str;
 
-  const question = String(testNumber.join(" "));
+  const question = String(testNumber.join(' '));
   return [question, correctAnswer];
 };
 

@@ -1,22 +1,22 @@
-import isNumberRandom from "../random.js";
-import runEngineGames from "../index.js";
+import isNumberRandom from '../random.js';
+import runEngineGames from '../index.js';
 
 const operationRandom = () => {
-  const arrayOperation = ["+", "*", "-"];
+  const arrayOperation = ['+', '*', '-'];
   return arrayOperation[Math.floor(Math.random() * arrayOperation.length)];
 };
-const challenge = "What is the result of the expression?";
+const challenge = 'What is the result of the expression?';
 
 const mathematicsExamination = (numberOne, numberTwo, operationOption) => {
   switch (operationOption) {
-    case "+":
+    case '+':
       return numberOne + numberTwo;
-    case "-":
+    case '-':
       return numberOne - numberTwo;
-    case "*":
+    case '*':
       return numberOne * numberTwo;
     default:
-      throw new Error("You made a mistake!");
+      throw new Error('You made a mistake!');
   }
 };
 

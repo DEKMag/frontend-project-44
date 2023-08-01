@@ -1,8 +1,8 @@
-import isNumberRandom from "../random.js";
-import runEngineGames from "../index.js";
+import isNumberRandom from '../random.js';
+import runEngineGames from '../index.js';
 
 const challenge =
-  'Answer "yes" if given number is prime. Otherwise answer "no".';
+  "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
 
 const numberTestPrime = (number) => {
   if (number === 1) {
@@ -21,7 +21,7 @@ const numberTestPrime = (number) => {
 
 const numberPrime = () => {
   const question = isNumberRandom();
-  const correctAnswer = numberTestPrime(question) ? "yes" : "no";
+  const correctAnswer = numberTestPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
