@@ -1,7 +1,5 @@
 [![Actions Status](https://github.com/DEKMag/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/DEKMag/frontend-project-44/actions)
-<a href='https://codeclimate.com/github/DEKMag/frontend-project-44/maintainability'></a>
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/44d41e0b9fba765235fd/maintainability)](https://codeclimate.com/github/DEKMag/frontend-project-44/maintainability)
+<a href='https://codeclimate.com/github/DEKMag/frontend-project-44/maintainability'><img src='https://api.codeclimate.com/v1/badges/44d41e0b9fba765235fd/maintainability'></></a>
 
 ### Hello, Username! Welcome to the Brain Games!
 
