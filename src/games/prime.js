@@ -1,7 +1,8 @@
 import isNumberRandom from "../random.js";
 import runEngineGames from "../index.js";
 
-const challenge = "Find the greatest common divisor of given numbers.";
+const challenge =
+  'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const numberTestPrime = (number) => {
   if (number === 1) {

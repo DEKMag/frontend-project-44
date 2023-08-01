@@ -1,7 +1,7 @@
 import isNumberRandom from "../random.js";
 import runEngineGames from "../index.js";
 
-const challenge = "What is the result of the expression?";
+const challenge = 'Answer "yes" if the number is even, otherwise answer "no"';
 
 const isNumberEven = (number) => number % 2 === 0;
 
