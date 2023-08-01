@@ -16,7 +16,7 @@ const mathematicsExamination = (numberOne, numberTwo, operationOption) => {
     case '*':
       return numberOne * numberTwo;
     default:
-      throw new Error('You made a mistake!');
+      console.log('You made a mistake!');
   }
 };
 
