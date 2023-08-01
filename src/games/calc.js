@@ -10,16 +10,21 @@ const operationRandom = () => {
 const challenge = 'What is the result of the expression?';
 
 const mathematicsExamination = (numberOne, numberTwo, operator) => {
+  let resultAnswer;
   switch (operator) {
     case '+':
-      return numberOne + numberTwo;
+      resultAnswer = numberOne + numberTwo;
+      break;
     case '-':
-      return numberOne - numberTwo;
+      resultAnswer = numberOne - numberTwo;
+      break;
     case '*':
-      return numberOne * numberTwo;
+      resultAnswer = numberOne * numberTwo;
+      break;
     default:
       break;
   }
+  return resultAnswer;
 };
 
 const isCalculator = () => {
