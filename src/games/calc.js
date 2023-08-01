@@ -28,7 +28,7 @@ const isCalculator = () => {
   const question = `Question: ${numberOne} ${operationOption} ${numberTwo}`;
 
   // prettier-ignore
-  const correctAnswer = mathematicsExamination(numberOne, operationOption, numberTwo).toString();
+  const correctAnswer = mathematicsExamination(numberOne, operationOption, numberTwo);
   return [question, correctAnswer];
 };
 
