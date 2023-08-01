@@ -9,8 +9,8 @@ const arrayOperation = ['+', '*', '-'];
 // };
 const challenge = 'What is the result of the expression?';
 
-const mathematicsExamination = (numberOne, numberTwo, operationOption) => {
-  switch (operationOption) {
+const mathematicsExamination = (numberOne, operator, numberTwo) => {
+  switch (operator) {
     case '+':
       return numberOne + numberTwo;
     case '-':
@@ -29,7 +29,7 @@ const isCalculator = () => {
   const question = `Question: ${numberOne} ${operator} ${numberTwo}`;
 
   // prettier-ignore
-  const correctAnswer = mathematicsExamination(numberOne, numberTwo, operator);
+  const correctAnswer = mathematicsExamination(numberOne, operator, numberTwo);
   return [question, correctAnswer];
 };
 
