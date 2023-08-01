@@ -16,7 +16,7 @@ const mathematicsExamination = (numberOne, numberTwo, operationOption) => {
     case '*':
       return numberOne * numberTwo;
     default:
-      console.log('You made a mistake!');
+      break;
   }
 };
 
@@ -25,10 +25,10 @@ const isCalculator = () => {
   const numberTwo = isNumberRandom();
   const operationOption = operationRandom();
 
-  const question = `${numberOne} ${operationOption} ${numberTwo}`;
+  const question = `Question: ${numberOne} ${operationOption} ${numberTwo}`;
 
   // prettier-ignore
-  const correctAnswer = mathematicsExamination(numberOne, operationOption, numberTwo).String();
+  const correctAnswer = mathematicsExamination(numberOne, operationOption, numberTwo).toString();
   return [question, correctAnswer];
 };
 
