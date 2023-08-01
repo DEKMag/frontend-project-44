@@ -27,9 +27,8 @@ const isCalculator = () => {
 
   const question = `${numberOne} ${operationOption} ${numberTwo}`;
 
-  const correctAnswer = String(
-    mathematicsExamination(numberOne, numberTwo, operationOption)
-  );
+  // prettier-ignore
+  const correctAnswer = mathematicsExamination(numberOne, numberTwo, operationOption).String();
   return [question, correctAnswer];
 };
 

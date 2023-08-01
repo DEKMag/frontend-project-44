@@ -1,7 +1,7 @@
-import isNumberRandom from "../random.js";
-import runEngineGames from "../index.js";
+import isNumberRandom from '../random.js';
+import runEngineGames from '../index.js';
 
-const challenge = "Find the greatest common divisor of given numbers.";
+const challenge = 'Find the greatest common divisor of given numbers.';
 
 const largestDivisor = (one, two) => {
   let number0ne = Math.abs(one);
