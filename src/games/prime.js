@@ -1,8 +1,8 @@
 import isNumberRandom from '../random.js';
 import runEngineGames from '../index.js';
 
-const challenge =
-  "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+// prettier-ignore
+const challenge = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const numberTestPrime = (number) => {
   if (number === 1) {
