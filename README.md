@@ -1,39 +1,66 @@
 [![Actions Status](https://github.com/DEKMag/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/DEKMag/frontend-project-44/actions)
+<a href='https://codeclimate.com/github/DEKMag/frontend-project-44/maintainability'></a>
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/44d41e0b9fba765235fd/maintainability)](https://codeclimate.com/github/DEKMag/frontend-project-44/maintainability)
 
-Welcome to the Brain Games!
+### Hello, Username! Welcome to the Brain Games!
+
+#### Description:
+
+"Brain Games" is a set of five console games based on popular mobile apps for brain training. Each game asks questions that need to be answered. After three correct answers, the game is considered to be completed. Incorrect results end the game and return it again.
+
+#### Minimum requirements:
 
 System requirements and Installation guide:
 
-1. Windows - Linux (WSL)
-2. Node.js v18.13.0 or higher:
-- node -v 
-3. To install the latest version of npm: 
+> **Windows 10 with WSL** > **Node.js v18.14.0**
+
+- node -v
+
+3. To install the latest version of npm:
+
 - npm install -g npm
 
 To install "Brain-games", you need:
 
-1. git clone https://github.com/DEKMag/frontend-project-44
-2. cd frontend-project-44
-3. make install
-4. npm link
-5. Choose your game.
+Just clone this baby to your machine using 'git clone <url>'. Open a **'frontend-project-44'** directory, then throw **'npm i'**. Congratulations! Now you are ready to get brained.
 
-### Start "brain-games.js"
-[![asciicast](https://asciinema.org/a/xWlGmSzdhZwOLB4hO7kCETm7h.svg)](https://asciinema.org/a/xWlGmSzdhZwOLB4hO7kCETm7h)
+#### Game "Brain-even"
 
-### Start "brain-even.js"
+> In this game, you will have to determine the parity of the loss number of times. Good luck to you!
+
 [![asciicast](https://asciinema.org/a/yVKwcgUiRWo4ZggA3yM1tQQNC.svg)](https://asciinema.org/a/yVKwcgUiRWo4ZggA3yM1tQQNC)
 
-### Start "brain-calc.js"
+---
+
+#### Game "Brain-calc"
+
+> In this game you will have to solve not very difficult mathematical problems for subtraction, addition and multiplication. You will succeed!
+
 [![asciicast](https://asciinema.org/a/9P29unxmclyKTadJgmvMNC9z8.svg)](https://asciinema.org/a/9P29unxmclyKTadJgmvMNC9z8)
 
-### Start "brain-gcd"
+---
+
+#### Game "Brain-gcd"
+
+> In this game you have to find the greatest common divisor. You can do it!
+
 [![asciicast](https://asciinema.org/a/7Ko88d0MVbMfGWCnNmpHuoJoU.svg)](https://asciinema.org/a/7Ko88d0MVbMfGWCnNmpHuoJoU)
 
-### Start "brain-progression"
+---
+
+#### Game "Brain-prime"
+
+> In this game you will have to answer if the number is even or not. Numbers will be randomly selected. You can handle it!
+
+[![asciicast](https://asciinema.org/a/g3Y4tUeRvHm6kspUwcG8uoR3b.svg)](https://asciinema.org/a/g3Y4tUeRvHm6kspUwcG8uoR3b)
+
+---
+
+#### Game "Brain-progression"
+
+> In this game, you will be shown a series of numbers that forms an arithmetic progression. A random number from this series will be replaced by two dots. You have to find out three times what this number is. Good luck!
+
 [![asciicast](https://asciinema.org/a/PnTzZQVEURMRB8cUIkukO8T8n.svg)](https://asciinema.org/a/PnTzZQVEURMRB8cUIkukO8T8n)
 
-### Start "brain-prime"
-[![asciicast](https://asciinema.org/a/g3Y4tUeRvHm6kspUwcG8uoR3b.svg)](https://asciinema.org/a/g3Y4tUeRvHm6kspUwcG8uoR3b)
+---

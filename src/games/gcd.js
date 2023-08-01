@@ -1,5 +1,7 @@
-import readlineSync from 'readline-sync';
-import isNumberRandom from '../random.js';
+import isNumberRandom from "../random.js";
+import runEngineGames from "../index.js";
+
+const challenge = "Find the greatest common divisor of given numbers.";
 
 const largestDivisor = (one, two) => {
   let number0ne = Math.abs(one);
@@ -13,29 +15,12 @@ const largestDivisor = (one, two) => {
 };
 
 const largestDivisorGame = () => {
-  console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}`);
+  const numberOne = isNumberRandom();
+  const numberTwo = isNumberRandom();
 
-  console.log('Find the greatest common divisor of given numbers.');
-
-  const numberAttempts = 3;
-
-  for (let i = 1; i <= numberAttempts; i += 1) {
-    const numberOne = isNumberRandom();
-    const numberTwo = isNumberRandom();
-
-    const userNumberTest = String(largestDivisor(numberOne, numberTwo));
-    const operationProcess = `${numberOne} ${numberTwo}`;
-    console.log(`Question: ${operationProcess}`);
-    const userQuestionNumber = readlineSync.question('Your answer: ');
-    if (userQuestionNumber !== userNumberTest) {
-      console.log(`${userQuestionNumber} is wrong answer ;(. Correct answer was ${userNumberTest}\nLet's try again, ${userName}!`);
-      return;
-    }
-    console.log('Correct!');
-  }
-  console.log(`Congratulations, ${userName}!`);
+  const question = `${numberOne} ${numberTwo}`;
+  const correctAnswer = String(largestDivisor(numberOne, numberTwo));
+  return [question, correctAnswer];
 };
 
-export default largestDivisorGame;
+export default () => runEngineGames(largestDivisorGame, challenge);
