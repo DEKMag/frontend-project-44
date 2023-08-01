@@ -9,7 +9,7 @@ const operationRandom = () => {
 };
 const challenge = 'What is the result of the expression?';
 
-const mathematicsExamination = (numberOne, operator, numberTwo) => {
+const mathematicsExamination = (numberOne, numberTwo, operator) => {
   switch (operator) {
     case '+':
       return numberOne + numberTwo;
@@ -29,7 +29,7 @@ const isCalculator = () => {
   const question = `Question: ${numberOne} ${operator} ${numberTwo}`;
 
   // prettier-ignore
-  const correctAnswer = mathematicsExamination(numberOne, operator, numberTwo);
+  const correctAnswer = mathematicsExamination(numberOne, numberTwo, operator).toString();
   return [question, correctAnswer];
 };
 
