@@ -7,21 +7,80 @@
 
 "Brain Games" is a set of five console games based on popular mobile apps for brain training. Each game asks questions that need to be answered. After three correct answers, the game is considered to be completed. Incorrect results end the game and return it again.
 
-#### Minimum requirements:
+#### Minimum requirements OS:
 
-System requirements and Installation guide:
+- Operating System: Windows 7 or higher
+- Processor (CPU): with two or more physical cores, supporting SSE2 technology
+- RAM: 2 GB
+- Video Adapter: NVIDIA GeForce 8600, ATI Radeon HD 4550
+- Free hard disk space: ~55 GB
+- Internet connection speed: 256 Kbit/s
 
-> **Windows 10 with WSL** > **Node.js v18.14.0**
+#### Minimum requirements Node JS:
 
-- node -v
+- Node JS: 13.2.0 (Released 2019-11-21)
+- Central processor: with a frequency of 1 GHz
+- RAM: 512 MB or more
+- Hard disk space: 20 MB
+- Platform: Microsoft Windows, Mac OS, Linux x32/x64
 
-3. To install the latest version of npm:
+#### Installation instructions
 
-- npm install -g npm
+1. Install Node.js of the latest version to the system globally
 
-To install "Brain-games", you need:
+```bash
+https://github.com/Hexlet/ru-instructions/blob/main/nodejs.md
+```
 
-Just clone this baby to your machine using 'git clone <url>'. Open a **'frontend-project-44'** directory, then throw **'npm i'**. Congratulations! Now you are ready to get brained.
+2. Clone the project repository locally
+
+```bash
+git clone https://github.com/DEKMag/frontend-project-44.git
+```
+
+3. Installing dependencies
+
+```bash
+npm ci
+```
+
+4. Initialize your npm package inside the root directory of the project
+
+```bash
+npm link
+```
+
+#### Start the games
+
+Definition of an even number.
+
+```bash
+make brain-even
+```
+
+Calculator.
+
+```bash
+make brain-calc
+```
+
+Determination of the greatest common divisor.
+
+```bash
+make brain-gcd
+```
+
+Progression.
+
+```bash
+make brain-progression
+```
+
+Definition of a prime number.
+
+```bash
+make brain-prime
+```
 
 #### Game "Brain-even"
 

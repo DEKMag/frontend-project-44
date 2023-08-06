@@ -1,7 +1,5 @@
-import isNumberRandom from '../random.js';
+import numberRandom from '../utils.js';
 import runEngineGames from '../index.js';
-
-// const arrayOperation = ['+', '*', '-'];
 
 const operationRandom = () => {
   const arrayOperation = ['+', '*', '-'];
@@ -27,15 +25,14 @@ const mathematicsExamination = (numberOne, numberTwo, operator) => {
   return resultAnswer;
 };
 
-const isCalculator = () => {
-  const numberOne = isNumberRandom();
-  const numberTwo = isNumberRandom();
+const startCalculatorGame = () => {
+  const numberOne = numberRandom();
+  const numberTwo = numberRandom();
   const operator = operationRandom();
   const question = `Question: ${numberOne} ${operator} ${numberTwo}`;
 
-  // prettier-ignore
   const correctAnswer = mathematicsExamination(numberOne, numberTwo, operator).toString();
   return [question, correctAnswer];
 };
 
-export default () => runEngineGames(isCalculator, challenge);
+export default () => runEngineGames(startCalculatorGame, challenge);

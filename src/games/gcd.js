@@ -1,4 +1,4 @@
-import isNumberRandom from '../random.js';
+import numberRandom from '../utils.js';
 import runEngineGames from '../index.js';
 
 const challenge = 'Find the greatest common divisor of given numbers.';
@@ -14,13 +14,13 @@ const largestDivisor = (one, two) => {
   return number0ne;
 };
 
-const largestDivisorGame = () => {
-  const numberOne = isNumberRandom();
-  const numberTwo = isNumberRandom();
+const startGameGCD = () => {
+  const numberOne = numberRandom();
+  const numberTwo = numberRandom();
 
   const question = `${numberOne} ${numberTwo}`;
   const correctAnswer = String(largestDivisor(numberOne, numberTwo));
   return [question, correctAnswer];
 };
 
-export default () => runEngineGames(largestDivisorGame, challenge);
+export default () => runEngineGames(startGameGCD, challenge);

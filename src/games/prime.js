@@ -1,10 +1,9 @@
-import isNumberRandom from '../random.js';
+import numberRandom from '../utils.js';
 import runEngineGames from '../index.js';
 
-// prettier-ignore
 const challenge = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const numberTestPrime = (number) => {
+const numberPrime = (number) => {
   if (number === 1) {
     return false;
   }
@@ -19,10 +18,10 @@ const numberTestPrime = (number) => {
   return true;
 };
 
-const numberPrime = () => {
-  const question = isNumberRandom();
-  const correctAnswer = numberTestPrime(question) ? 'yes' : 'no';
+const startGamePrime = () => {
+  const question = numberRandom();
+  const correctAnswer = numberPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-export default () => runEngineGames(numberPrime, challenge);
+export default () => runEngineGames(startGamePrime, challenge);

@@ -1,9 +1,9 @@
-import isNumberRandom from '../random.js';
+import numberRandom from '../utils.js';
 import runEngineGames from '../index.js';
 
 const challenge = 'What number is missing in the progression?';
 
-const numberOne = isNumberRandom();
+const numberOne = numberRandom();
 
 const step = 2;
 const quantity = 9;
@@ -21,7 +21,7 @@ const progression = (number, stepNumber, quantityNumber) => {
   return arr;
 };
 
-const progressionGames = () => {
+const startGamesProgression = () => {
   const testNumber = progression(numberOne, step, quantity);
   const numberResultOne = Math.floor(Math.random() * 10);
 
@@ -34,4 +34,4 @@ const progressionGames = () => {
   return [question, correctAnswer];
 };
 
-export default () => runEngineGames(progressionGames, challenge);
+export default () => runEngineGames(startGamesProgression, challenge);
