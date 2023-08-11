@@ -10,10 +10,6 @@
 #### Minimum requirements Node JS:
 
 - Node JS: 13.2.0 and higher.
-- Central processor: with a frequency of 1 GHz
-- RAM: 512 MB or more
-- Hard disk space: 20 MB
-- Platform: Microsoft Windows, Mac OS, Linux x32/x64
 
 #### Installation instructions
 
