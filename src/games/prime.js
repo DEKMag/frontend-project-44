@@ -24,6 +24,5 @@ const runPrimeGame = () => {
   return [question, correctAnswer];
 };
 
-export default runPrimeGame;
-
-runEngineGame(runPrimeGame, challenge);
+const genarateRaoundPrime = () => runEngineGame(challenge, runPrimeGame);
+export default genarateRaoundPrime;

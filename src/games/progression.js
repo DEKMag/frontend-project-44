@@ -34,6 +34,5 @@ const runProgressionGame = () => {
   return [question, correctAnswer];
 };
 
-export default runProgressionGame;
-
-runEngineGame(runProgressionGame, challenge);
+const genarateRaoundProgression = () => runEngineGame(challenge, runProgressionGame);
+export default genarateRaoundProgression;

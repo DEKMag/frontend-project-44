@@ -23,6 +23,5 @@ const runGCDGame = () => {
   return [question, correctAnswer];
 };
 
-export default runGCDGame;
-
-runEngineGame(runGCDGame, challenge);
+const genarateRaoundGCD = () => runEngineGame(challenge, runGCDGame);
+export default genarateRaoundGCD;

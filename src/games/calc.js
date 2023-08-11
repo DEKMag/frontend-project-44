@@ -35,6 +35,5 @@ const runCalculatorGame = () => {
   return [question, correctAnswer];
 };
 
-export default runCalculatorGame;
-
-runEngineGame(runCalculatorGame, challenge);
+const genarateRaound = () => runEngineGame(challenge, runCalculatorGame);
+export default genarateRaound;

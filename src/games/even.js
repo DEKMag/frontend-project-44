@@ -12,6 +12,5 @@ const runEvenGame = () => {
   return [question, correctAnswer];
 };
 
-export default runEvenGame;
-
-runEngineGame(runEvenGame, challenge);
+const genarateRaoundEven = () => runEngineGame(challenge, runEvenGame);
+export default genarateRaoundEven;
