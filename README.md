@@ -11,6 +11,10 @@
 
 - Node JS: 13.2.0 and higher.
 
+```bash
+https://nodejs.org
+```
+
 #### Installation instructions
 
 1. Clone the project repository locally
