@@ -7,18 +7,9 @@
 
 "Brain Games" is a set of five console games based on popular mobile apps for brain training. Each game asks questions that need to be answered. After three correct answers, the game is considered to be completed. Incorrect results end the game and return it again.
 
-#### Minimum requirements OS:
-
-- Operating System: Windows 7 or higher
-- Processor (CPU): with two or more physical cores, supporting SSE2 technology
-- RAM: 2 GB
-- Video Adapter: NVIDIA GeForce 8600, ATI Radeon HD 4550
-- Free hard disk space: ~55 GB
-- Internet connection speed: 256 Kbit/s
-
 #### Minimum requirements Node JS:
 
-- Node JS: 13.2.0 (Released 2019-11-21)
+- Node JS: 13.2.0 and higher.
 - Central processor: with a frequency of 1 GHz
 - RAM: 512 MB or more
 - Hard disk space: 20 MB
@@ -26,25 +17,19 @@
 
 #### Installation instructions
 
-1. Install Node.js of the latest version to the system globally
-
-```bash
-https://github.com/Hexlet/ru-instructions/blob/main/nodejs.md
-```
-
-2. Clone the project repository locally
+1. Clone the project repository locally
 
 ```bash
 git clone https://github.com/DEKMag/frontend-project-44.git
 ```
 
-3. Installing dependencies
+2. Installing dependencies
 
 ```bash
 npm ci
 ```
 
-4. Initialize your npm package inside the root directory of the project
+3. Initialize your npm package inside the root directory of the project
 
 ```bash
 npm link
