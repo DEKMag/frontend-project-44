@@ -8,7 +8,7 @@ const numberOne = getRandomNumber();
 const step = 2;
 const quantity = 9;
 
-const progression = (number, stepNumber, quantityNumber) => {
+const createProgression = (number, stepNumber, quantityNumber) => {
   const len = quantityNumber;
   const arr = [];
 
@@ -22,7 +22,7 @@ const progression = (number, stepNumber, quantityNumber) => {
 };
 
 const runProgressionGame = () => {
-  const testNumber = progression(numberOne, step, quantity);
+  const testNumber = createProgression(numberOne, step, quantity);
   const numberResultOne = Math.floor(Math.random() * 10);
 
   const correctAnswer = String(testNumber[numberResultOne]);
