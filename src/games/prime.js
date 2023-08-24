@@ -3,7 +3,7 @@ import runEngineGame from '../index.js';
 
 const challenge = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const numberPrime = (number) => {
+const createNumberPrime = (number) => {
   if (number === 1) {
     return false;
   }
@@ -20,7 +20,7 @@ const numberPrime = (number) => {
 
 const generateRound = () => {
   const question = getRandomNumber(0, 100);
-  const correctAnswer = numberPrime(question) ? 'yes' : 'no';
+  const correctAnswer = createNumberPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
