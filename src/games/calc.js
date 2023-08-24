@@ -1,39 +1,30 @@
-import getRandomNumber from '../utils.js';
+import { getRandomNumber, getRandomIndex } from '../utils.js';
 import runEngineGame from '../index.js';
 
-const operationRandom = () => {
-  const arrayOperation = ['+', '*', '-'];
-  return arrayOperation[Math.floor(Math.random() * arrayOperation.length)];
-};
+const operators = ['+', '*', '-'];
 const challenge = 'What is the result of the expression?';
 
-const mathematicsExamination = (numberOne, numberTwo, operator) => {
-  let resultAnswer;
+const calculate = (number1, number2, operator) => {
   switch (operator) {
     case '+':
-      resultAnswer = numberOne + numberTwo;
-      break;
+      return number1 + number2;
     case '-':
-      resultAnswer = numberOne - numberTwo;
-      break;
+      return number1 - number2;
     case '*':
-      resultAnswer = numberOne * numberTwo;
-      break;
+      return number1 * number2;
     default:
-      break;
+      throw new Error(`Error ${operator}`);
   }
-  return resultAnswer;
 };
 
-const runCalculatorGame = () => {
-  const numberOne = getRandomNumber();
-  const numberTwo = getRandomNumber();
-  const operator = operationRandom();
-  const question = `Question: ${numberOne} ${operator} ${numberTwo}`;
-
-  const correctAnswer = mathematicsExamination(numberOne, numberTwo, operator).toString();
+const generateRound = () => {
+  const number1 = getRandomNumber(0, 100);
+  const number2 = getRandomNumber(0, 100);
+  const operator = operators[getRandomIndex(operators)];
+  const question = `Question: ${number1} ${operator} ${number2}`;
+  const correctAnswer = calculate(number1, number2, operator).toString();
   return [question, correctAnswer];
 };
 
-const genarateRaoundCalc = () => runEngineGame(challenge, runCalculatorGame);
-export default genarateRaoundCalc;
+const runGameCalc = () => runEngineGame(challenge, generateRound);
+export default runGameCalc;

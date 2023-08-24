@@ -18,11 +18,11 @@ const numberPrime = (number) => {
   return true;
 };
 
-const runPrimeGame = () => {
-  const question = getRandomNumber();
+const generateRound = () => {
+  const question = getRandomNumber(0, 100);
   const correctAnswer = numberPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-const genarateRaoundPrime = () => runEngineGame(challenge, runPrimeGame);
-export default genarateRaoundPrime;
+const runGamePrime = () => runEngineGame(challenge, generateRound);
+export default runGamePrime;
