@@ -17,7 +17,7 @@ const createProgression = (number, stepNumber, quantityNumber) => {
 
 const generateRound = () => {
   const step = getRandomNumber(0, 10);
-  const start = getRandomNumber();
+  const start = getRandomNumber(0, 100);
   const progression = createProgression(start, step, quantity);
   const hiddenNumberIndex = getRandomIndex(progression);
   const correctAnswer = String(progression[hiddenNumberIndex]);
